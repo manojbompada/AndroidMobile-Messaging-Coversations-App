@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cole.homework8.EditProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameDescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameDescription"
+        android:layout_above="@+id/fullNameEditProfile" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullNameEditProfile"
+        android:layout_above="@+id/emailEditProfile"
+        android:layout_alignParentRight="true"
+        android:hint="Full Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailEditProfile"
+        android:layout_above="@+id/phoneNumbeEditProfile"
+        android:layout_alignParentRight="true"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNumbeEditProfile"
+        android:layout_above="@+id/passwordEdit"
+        android:layout_alignParentRight="true"
+        android:hint="Phone Number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEdit"
+        android:layout_marginBottom="89dp"
+        android:layout_above="@+id/updateProfile"
+        android:layout_alignParentStart="true"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateProfile"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/nameDescription" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:id="@+id/cancelUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/nameDescription" />
+</RelativeLayout>
